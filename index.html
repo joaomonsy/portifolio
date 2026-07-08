@@ -38,8 +38,60 @@
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Sou estudante de Sistemas de Informação na USP e formado como Técnico em Desenvolvimento de Sistemas. Tenho foco no desenvolvimento Front-End, buscando criar interfaces modernas, responsivas e intuitivas que proporcionem uma excelente experiência ao usuário. Estou sempre aprimorando meus conhecimentos e explorando novas formas de transformar ideias em soluções digitais eficientes.
+            <p class="sobre-paragrafo">Sou estudante de Sistemas de Informação na USP e formado como Técnico em
+                Desenvolvimento de Sistemas. Tenho foco no desenvolvimento Front-End, buscando criar interfaces
+                modernas, responsivas e intuitivas que proporcionem uma excelente experiência ao usuário. Estou sempre
+                aprimorando meus conhecimentos e explorando novas formas de transformar ideias em soluções digitais
+                eficientes.
             </p>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline">
+        <h2 class="timeline-titulo">Minha Jornada</h2>
+
+        <div class="timeline-container">
+
+            <div class="timeline-item">
+                <div class="timeline-ponto"></div>
+                <div class="timeline-conteudo">
+                    <span class="timeline-data">2020</span>
+                    <h3>Curso de férias em arduíno</h3>
+                    <p>Aprendi os fundamentos da programação e eletrônica. (e onde me apaixonei por essa área &#128512)
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-ponto"></div>
+                <div class="timeline-conteudo">
+                    <span class="timeline-data">2021</span>
+                    <h3>Ingresso na ETEC</h3>
+                    <p>Iniciei o curso de Desenvolvimento de Sistemas, onde iniciei meus estudos em programação e
+                        desenvolvimento de software.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-ponto"></div>
+                <div class="timeline-conteudo">
+                    <span class="timeline-data">2026</span>
+                    <h3>Ingresso na USP</h3>
+                    <p>Iniciei o curso de Sistemas de Informação, aprofundando conhecimentos em desenvolvimento de
+                        software e engenharia de sistemas .</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-ponto"></div>
+                <div class="timeline-conteudo">
+                    <span class="timeline-data">Hoje</span>
+                    <h3>Desenvolvimento Front-End</h3>
+                    <p>Criação de aplicações responsivas, integração com APIs, projetos pessoais e evolução constante em
+                        JavaScript e desenvolvimento web.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -48,31 +100,38 @@
         <div class="projetos-caixa">
 
             <div class="projetos-card">
-                <img src="./img/segurancagas.png" alt="Projeto 1" class="projetos-imagem">
-                <h3 class="info-projetos">Sensor de gás</h3>
-                <div class="caixa-textos-projetos">
-                    <p class="paragrafo-projetos">Microcomputador de alerta residencial</p>
-                </div>
+                <a href="https://www.tinkercad.com/things/a3jwPpgIW7K-seguranca-contra-gas" target="_blank">
+                    <img src="./img/segurancagas.png" alt="Projeto 1" class="projetos-imagem">
+                    <h3 class="info-projetos">Sensor de gás</h3>
+                    <div class="caixa-textos-projetos">
+                        <p class="paragrafo-projetos">Microcomputador de alerta residencial</p>
+                    </div>
+                </a>
             </div>
 
             <div class="projetos-card">
-                <img src="./img/siteclima.png" alt="Projeto 2" class="projetos-imagem">
-                <h3 class="info-projetos ">Clima</h3>
-                <div class="caixa-textos-projetos">
-                    <p class="paragrafo-projetos">Site com monitoramento global instantâneo</p>
-                </div>
+                <a href="https://github.com/joaomonsy/SiteClima.git" target="_blank">
+                    <img src="./img/siteclima.png" alt="Projeto 2" class="projetos-imagem">
+                    <h3 class="info-projetos ">Clima</h3>
+                    <div class="caixa-textos-projetos">
+                        <p class="paragrafo-projetos">Site com monitoramento global instantâneo</p>
+                    </div>
+                </a>
             </div>
 
             <div class="projetos-card">
-                <img src="./img/quizprogramadores.png" alt="Projeto 3 " class="projetos-imagem">
-                <h3 class="info-projetos ">Quiz</h3>
-                <div class="caixa-textos-projetos">
-                    <p class="paragrafo-projetos">Quiz para programadores</p>
-                </div>
+                <a href="https://github.com/joaomonsy/HTML_CSS_basico.git" target="_blank">
+                    <img src="./img/quizprogramadores.png" alt="Projeto 3 " class="projetos-imagem">
+                    <h3 class="info-projetos ">Quiz</h3>
+                    <div class="caixa-textos-projetos">
+                        <p class="paragrafo-projetos">Quiz para programadores</p>
+                    </div>
+                </a>
             </div>
 
         </div>
     </section>
+
 
     <section id="contatos" class="contatos">
         <h2 class="contatos-titulo">Entre em contato</h2>
@@ -88,24 +147,50 @@
         </form>
     </section>
 
-    <script>
 
-        function enviarWhats(event) {
-            event.preventDefault();
+    <section id="timeline" class="timeline">
+        <h2 class="projetos-titulo">Fun Fact</h2>
+        <h3>Já passei por mais de 10 estádios ao redor do Brasil e do mundo para acompanhar o Palmeiras jogar e aqui estão alguns deles: </h3>
+        <div class="projetos-caixa">
+            <div class="carrossel">
 
-        const nome = document.getElementById('nome');
-        const mensagem = document.getElementById('mensagem');
-        const telefone = '55991999999';
+                <button class="btn prev">&#10094;</button>
 
-        const texto = `Olá, me chamo ${nome.value}, ${mensagem.value}`;
-        const msgFormatada = encodeURIComponent(texto);
+                <div class="slides">
 
-        const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+                    <div class="slide ativo">
+                        <img src="img/estadios/allianz.jpg" alt="Allianz Parque">
+                        <p>📍 Allianz Parque - São Paulo/SP</p>
+                    </div>
 
-        window.open(url, '_blank');
-        }
+                    <div class="slide">
+                        <img src="img/estadios/metlife.jpg" alt="Metlife Stadium">
+                        <p>📍 Metlife Stadium - Nova Jersey/USA</p>
+                    </div>
 
-    </script>
+                    <div class="slide">
+                        <img src="img/estadios/mineirao.png" alt="Mineirão">
+                        <p>📍 Mineirão - Belo Horizonte/MG</p>
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/estadios/brasilia.jpg" alt="Mané Garrincha">
+                        <p>📍 Mané Garrincha - Brasília/DF</p>
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/estadios/barueri.jpg" alt="Barueri">
+                        <p>📍 Barueri - São Paulo/SP</p>
+                    </div>
+
+                </div>
+
+                <button class="btn next">&#10095;</button>
+
+            </div>
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 
